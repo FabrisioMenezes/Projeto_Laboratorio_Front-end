@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <header class="header-cadastro"> 
+        <img src="../img/logo-header.png" alt="">
+        
+    </header>
+    <main>
+        <h1>Cadastro de <strong class="titulo-pesquisador">Pesquisador</strong></h1>
+        <div class="conteiner">
+            <form method="POST">
+                <div>
+                    <label>
+                        <input type="text" id="nome-completo" placeholder="Nome Completo">
+                    </label></br>
+                    
+                    <label>
+                        <input type="email" name="email" id="email-pesquisador" placeholder="E-mail">
+                    </label></br>
+
+                    <label>
+                        <input type="email" name="email" id="confirmar-email-pesquisador" placeholder="Confirme seu email">
+                    </label></br>
+
+                    <label>
+                        <input type="password" name="senha" id="senha-pesquisador" placeholder="Senha">
+                    </label></br>
+
+                    <label>
+                        <input type="password" name="confirmar-senha" id="confirmar-senha-pesquisador" placeholder="Confirmar senha">
+                    </label></br>
+                </div>
+                <div class="segunda-coluna">
+                    <label >
+                        <input type="text" id="matricula-pesquisador" placeholder="Matrícula">
+                    </label>
+                    <label>
+                        <input list="area-conhecimento" name="browser" placeholder="Área de Conhecimento"/>
+                            <datalist id="area-conhecimento">
+                            <option value="Ciências Biológicas e da Saúde">
+                            <option value="Ciências Humanas e Sociais Aplicadas">
+                            <option value="Desenvolvimento Tecnológico e Inovação">
+                            </datalist>
+                    </label>
+                    <label >
+                        <input type="text" id="curriculo-lattes" placeholder="Insira o Link do Currículo Lattes">
+                    </label>
+                </div>
+            </form>
+        </div>    
+    </main>
+</body>
+
+<footer>
+    
+</footer>
+</html>

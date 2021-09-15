@@ -9,7 +9,7 @@ body{
 }
 .conteiner{
     width: 400px;
-    border-radius: 15px;
+    border-radius: 10px;
     display: block;
     justify-items: center;
     background-color: white;

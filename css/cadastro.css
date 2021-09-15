@@ -1,5 +1,5 @@
 body{
-    background-image: url(../img/background\ bio.png);
+    background-color: #ffffff;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -7,29 +7,39 @@ body{
     justify-content: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+body h1{
+    text-align: center;
+    margin-bottom: -50px;
+    margin-top: 50px;
+}
+
+.titulo-pesquisador{
+    color: blue;
+}
 .conteiner{
-    width: 400px;
+    width: 800px;
     border-radius: 15px;
     display: block;
     justify-items: center;
     background-color: white;
     padding: 20px;
     margin-top: 3%;
-    margin-left: 35%;
+    margin-left: 20%;
     
 }
 label{
     font-family: 'karla', sans-serif;
+    
 }
-.area-login{
+.area-cadasyto{
     display: block;
 
 }
-.area-login label{
+.area-cadatro label{
     display: block;
     padding: 10px;
 }
-.area-login input{
+.area-cadastro input{
     height: 30px;
     width: 100%;
     outline: 0;
@@ -37,40 +47,25 @@ label{
     color: black;
     
 }
-.area-login .buton{
-    color: white;
-    background-color: #5E81AC;
-    border-radius: 15px;
-    margin-top: 0px;
-    transition: box-shadow .3s ease;
-    cursor: pointer;
-}
-.area-login .buton:hover{
-    background-color: rgb(84, 84, 230);
-    
-}
-.area-login label p{
+
+.area-cadastro label p{
     text-align: center;
     margin-bottom: 0px;
 }
-.logo-marca{
-    margin-top: -100px;
-    margin-bottom: -50px;
-    align-items: center;
-    display: flex;
 
-}
 form{
     margin-top: 0px;
+    display: flex;
+    
 }
 
 footer{
-    width:100;
+    width:100%;
     text-align: center;
     font-weight: 200;
     font-style: italic;
     padding: 20px;
-    display: block;
+    display: flex;
     margin-left: 3%;
     margin-top: 50px;
 }
@@ -80,7 +75,41 @@ footer{
 
 
 .header-cadastro{
-    height: 50px;
+    height: 100px;
     width: 100%;
-    background-color: #999999e;
+    background-color: #999999;
+    padding-left: 50px;
+}
+
+
+input{
+    width: 100%;
+    height: 35px;
+    margin: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    outline: 0;
+    border: 0 none;
+    background-color: #EEEEEE;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+input::-webkit-calendar-picker-indicator {
+    opacity: 100;
+ }
+
+
+#curriculo-lattes{
+    height: 150px;
+}
+
+div{
+    margin: 15px;
+}
+.header-cadastro img{
+    height: 100px;
+}
+.botão{
+    width: 200px;
 }
