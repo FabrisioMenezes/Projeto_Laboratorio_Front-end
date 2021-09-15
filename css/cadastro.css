@@ -14,7 +14,7 @@ body h1{
 }
 
 .titulo-pesquisador{
-    color: blue;
+    color: #5E81AC;
 }
 .conteiner{
     width: 800px;
@@ -31,10 +31,7 @@ label{
     font-family: 'karla', sans-serif;
     
 }
-.area-cadasyto{
-    display: block;
 
-}
 .area-cadatro label{
     display: block;
     padding: 10px;
@@ -75,15 +72,23 @@ footer{
 
 
 .header-cadastro{
-    height: 100px;
-    width: 100%;
+ 
     background-color: #999999;
     padding-left: 50px;
+    
+    
 }
-
-
-input{
+.primeira-coluna{
+    width: 60%;
+}
+.primeira-coluna input{
     width: 100%;
+}
+.segunda-coluna input{
+    width: 70%;
+}
+input{
+    width: 50%;
     height: 35px;
     margin: 10px;
     padding-left: 10px;
@@ -93,6 +98,10 @@ input{
     background-color: #EEEEEE;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
+}
+
+.campos-maiores{
+    width: 100%;
 }
 
 input::-webkit-calendar-picker-indicator {
@@ -108,8 +117,63 @@ div{
     margin: 15px;
 }
 .header-cadastro img{
-    height: 100px;
+	height: 150px;
 }
-.botão{
-    width: 200px;
+.botao{
+    width: 300px;
+    border-style: none;
+    border-radius: 15px;
+    height: 40px;
+    justify-content: center;
+    background-color: #5E81AC;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: box-shadow .4s ease;
+    
+}
+
+.botao:hover{
+    box-shadow: inset 200px 0 0 #00000055;
+}
+
+#checkbox{
+    font: 1rem 'Fira Sans', sans-serif;
+    margin-right: 0px;
+    padding: 0;
+    border: 0;
+    width: 50px;
+    height: 15px;
+    justify-content: center;
+}
+
+.termos{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: red;
+      
+}
+
+.termos :hover{
+    color:#2a3b50;
+}
+
+
+
+a{
+    color: #5E81AC;
+    text-decoration: none;
+}
+
+footer{
+    background-image: url(../img/rodape.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+    margin-left: 0px;
+    
+    
 }
