@@ -1,4 +1,3 @@
-
 function fazPost(url, body){
     console.log("body=", body);
     let request = new XMLHttpRequest();
