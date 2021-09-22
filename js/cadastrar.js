@@ -1,3 +1,4 @@
+
 function fazPost(url, body){
     console.log("body=", body);
     let request = new XMLHttpRequest();
@@ -9,6 +10,7 @@ function fazPost(url, body){
     }
     return request.responseText
 }
+
 function cadastrar(){
     event.preventDefault()
     let url = " https://biolab-back.herokuapp.com/researchers";
