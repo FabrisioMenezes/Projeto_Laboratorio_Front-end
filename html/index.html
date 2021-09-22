@@ -13,18 +13,20 @@
             <img src="../img/Logotipo.png" alt="Logo"/>
         </div>
         <div class="area-login">
-            <form method="POST" >
+            <script src="../js/main.js"></script>
+            <form method="GET">
                 <label>
                     Usuário:</br>
-                    <input type="email" name="usuario" id="Cusuario" required/>
+                    <input type="email" name="usuario" id="Cusuario" requerid/>
+                    <div id="respostaUsuario"></div>
                 </label>
                 <label>
                     Senha:</br>
-                    <input type="password" name="senha" id="Csenha">
+                    <input type="password" name="senha" id="Csenha" >
                     <p><a href="">Esqueceu a senha?</a> </p>
                 </label>
                 <label>
-                    <input class="buton" type="submit" value="Login" required>
+                    <input onclick="fazerLogin()" class="buton" type="submit" value="Login" requerid>
                 </label>
             </form>
         </div>
@@ -39,12 +41,5 @@
             Copyright 2021 &copy; - Todos os Direitos Reservados
         </footer>
     </div>
-
-   
 </body>
-
-<script src="../js/main.js"></script>
-
-
-
 </html>

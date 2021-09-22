@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/cadastro.css">
-    
     <title>Cadastre-se</title>
 </head>
 <body>
@@ -16,6 +15,7 @@
     <main>
         <h1>Cadastro de <strong class="titulo-pesquisador">Pesquisador</strong></h1>
         <div class="conteiner">
+            <script src="../js/cadastrar.js"></script>
             <form id="form" class="validator" method="POST">
                 <div class="primeira-coluna">
                     <label>
@@ -43,7 +43,7 @@
                         <input type="text" id="matricula-pesquisador" placeholder="Matrícula">
                     </label>
                     <label>
-                        <input list="area-conhecimento" name="browser" placeholder="Área de Conhecimento"/>
+                        <input list="area-conhecimento" id="conhecimento" name="browser" placeholder="Área de Conhecimento"/>
                             <datalist id="area-conhecimento">
                             <option value="Ciências Biológicas e da Saúde">
                             <option value="Ciências Humanas e Sociais Aplicadas">
