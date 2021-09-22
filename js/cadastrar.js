@@ -29,4 +29,5 @@ function cadastrar(){
         "curriculumLink": linkCurriculo
     }
     fazPost(url, body);
+    alert("Usuário cadastrado com sucesso")
 }
