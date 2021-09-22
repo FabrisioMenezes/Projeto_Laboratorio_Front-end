@@ -23,6 +23,7 @@ function fazerLogin(){
         }
         else if(response.status === 200){
             alert("usuario Encontrado")
+            window.location.replace("dashboard.html")
 
         }
     })
