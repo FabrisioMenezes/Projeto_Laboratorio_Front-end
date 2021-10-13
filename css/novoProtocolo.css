@@ -1,0 +1,23 @@
+label{
+    display: block;
+    margin-top: 5px;
+}
+label p{
+    margin-bottom: 1px;
+    margin-top: 10px;
+}
+label input{
+    margin-top: 1px;
+    width: 500px;
+    height: 30px;
+}
+label textarea{
+    width: 500px;
+}
+.butão{
+    color: white;
+    background-color: rgb(89, 186, 216);
+}
+.butão:hover{
+    background-color: blue;
+}

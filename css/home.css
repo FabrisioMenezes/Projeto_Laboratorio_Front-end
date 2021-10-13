@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    width: 1000px;
+    height: 400px;
+}
+.container-secundario{
+    background-color: white;
+    margin-right: 10px;
+    width: 300px;
+    height:300px ;
+}
+.container-secundario h3{
+    background-color: #eeeeee;
+}
+.favoritos{
+    background-color: #f6f6f6;
+    height: 250px;
+    width: 250px;
+    margin-left: 10px;
+    margin-top: -15px;
+}
+.consultas{
+    background-color: #f6f6f6;
+    height: 250px;
+    width: 250px;
+    margin-left: 10px;
+    margin-top: -15px;
+}
