@@ -1,3 +1,8 @@
+body{
+    font-family: 'Courier New', monospace;
+}
+
+
 .header-dashboard{
     height: 70px;
     background-color: #5E81AC;
@@ -31,6 +36,7 @@ img{
     display: block;
     align-items: left;
     justify-content: center;
+    
 }
 li{
     margin-top: 3px;
@@ -58,6 +64,7 @@ a{
 ul{
     padding: 0px;
     align-items: left;
+    text-decoration: none;
 }
 .li-sair{
     height: 273px;
