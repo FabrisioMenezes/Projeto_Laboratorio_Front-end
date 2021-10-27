@@ -1,34 +1,35 @@
 <link rel="stylesheet" href="../css/novoProtocolo.css">
 
-    <form action="">
+    <form method="post">
         <fieldset>
             <h2>Novo Protocolo</h2>
             <label>
                 <p>Titulo</p>
-                <input type="text">
+                <input type="text" name="titulo" id="titulo">
             </label>
             <label>
                 <p>Resenha</p>
-                <textarea name="" id="" cols="30" rows="3"></textarea>
+                <textarea name="resenha" id="resenha" cols="30" rows="3"></textarea>
             </label>
             <label>
                 <p>Área da Pesquisa</p>
-                <input type="text" name="" id="">
+                <input type="number" name="areaPesquisa" id="areaPesquisa">
             </label>
             <label>
                 <p>Espécie</p>
-                <input type="text">
+                <input type="number" name="especie" id="especie">
             </label>
             <label>
-                <p>Quantidade</p>
-                <input type="text">
+                <p>Quanntidade</p>
+                <input type="number" name="quantidade" id="quantidade">
             </label>
             <label>
                 <p>Matricula do Solicitante</p>
-                <input type="text">
+                <input type="number" name="matricula" id="matricula">
             </label>
             <label>
-                <input class="butão" type="button" value="Solicitar">
+                <input class="butão" type="submit" value="Solicitar" onclick="cadastrar()">
             </label>
         </fieldset>
+        <script src="../js/novoProtocolo.js"></script>
     </form>
