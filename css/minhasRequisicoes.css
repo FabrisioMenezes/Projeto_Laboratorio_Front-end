@@ -1,0 +1,19 @@
+.container{
+    margin: 70px;
+}
+.cabecalho{
+    background-color: blue;
+    color: white;
+}
+.titulo{
+    width: 300px;
+    text-align: center;
+}
+.celula{
+    width: 200px;
+    text-align: center;
+}
+td{
+    border: "1px";
+    text-align: center;
+}
