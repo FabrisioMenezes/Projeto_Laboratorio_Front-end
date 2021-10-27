@@ -1,0 +1,28 @@
+
+.containe-secundario{
+    padding-left: 70px;
+    width: 700px;
+    height: 520px;
+    display: flex;
+}
+label{
+    margin: 3px;
+}
+input{
+    width: 400px;
+    height: 30px;
+}
+.butao{
+    background-color: rgb(83, 83, 240);
+    color: white;
+}
+.butao:hover{
+    background-color: blue;
+}
+p{
+    margin-bottom: 4px;
+}
+fieldset{
+    width: 600px;
+    padding-left: 90px;
+}

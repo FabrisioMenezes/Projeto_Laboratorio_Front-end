@@ -9,7 +9,7 @@ function fazPost(url, body){
     }
     return request.responseText
 }
-function cadastrar(){
+function cadastrar(){ 
     event.preventDefault()
     let url = " https://biolab-back.herokuapp.com/researchers";
     let nome = document.getElementById("nome-completo").value;
