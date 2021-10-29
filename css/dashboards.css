@@ -1,3 +1,7 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .header-dashboard{
     height: 70px;
     background-color: #5E81AC;
@@ -5,13 +9,28 @@
     justify-content: space-between;
     padding: 10px;
 }
+
 img{
     height: 80px;
     margin-bottom: 15px;
 }
 .logo-input{
     display: flex;
+
 }
+
+.logo_header{
+    width: 70px;
+    height: 70px;
+}
+
+.user_button{
+    width: 70px;
+    height: 70px;
+    position: inherit;
+    cursor: pointer;
+}
+
 .input-pesquisar{
     height: 30px;
     width: 250px;
