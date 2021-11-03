@@ -4,18 +4,10 @@ function fazPost(url, body){
     request.open("POST", url, true);
     request.setRequestHeader("Content-type", "application/json");
     request.send(JSON.stringify(body))
-    request.onload = function(){
+    request.onload = function() {
         console.log(this.responseText);
-        (response =>{
-            if(response.status === 400 ||  response.status === 404){
-                console.log("usuario não encontrado")
-                alert("Erro")
-            }
-            else if(response.status === 200 || response.status === 201){
-                alert("Protocolo foi cadastrado")
-            }
-        })
     }
+
     return request.responseText
 
 }
