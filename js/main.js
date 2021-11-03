@@ -22,7 +22,6 @@ function fazerLogin(){
             alert("Usuario não encontrado")
         }
         else if(response.status === 200){
-            alert("usuario Encontrado")
             window.location.replace("dashboardSecretaria.html")
 
         }

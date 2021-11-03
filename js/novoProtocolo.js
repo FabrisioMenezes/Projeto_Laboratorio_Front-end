@@ -5,9 +5,8 @@ function fazPost(url, body){
     request.setRequestHeader("Content-type", "application/json");
     request.send(JSON.stringify(body))
     request.onload = function() {
-        console.log(this.responseText);
+        console.log(this.responseText)
     }
-
     return request.responseText
 
 }
@@ -29,5 +28,16 @@ function cadastrar(){
         "quantitySpecies": quantidade
     }
     fazPost(url, body);
+    limparCampos();
+    alert("Protocolo Cadastrado!")
 
+}
+
+function limparCampos(){
+    titulo = document.getElementById("titulo").value = "";
+    resenha = document.getElementById("resenha").value = "";
+    areaPesquisa = document.getElementById("areaPesquisa").value = "";
+    especie = document.getElementById("especie").value = "";
+    quantidade = document.getElementById("quantidade").value = "";
+    matricula = document.getElementById("matricula").value = "";
 }
