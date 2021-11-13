@@ -1,4 +1,4 @@
-fetch(`https://biolab-back.herokuapp.com/protocols/status/0`)
+fetch(`https://projeto-biolab.herokuapp.com/protocols/status/0`)
     .then(response => response.json())
     .then(data => {
             let tbody = document.getElementById("body");

@@ -1,4 +1,4 @@
-fetch(`https://biolab-back.herokuapp.com/protocols`)
+fetch(`https://projeto-biolab.herokuapp.com/protocols`)
     .then(response => response.json())
     .then(data => {
         let tbody = document.getElementById("body");
@@ -8,11 +8,21 @@ fetch(`https://biolab-back.herokuapp.com/protocols`)
             let td_creationDate = tr.insertCell();
             let td_status = tr.insertCell();
 
-            td_title.innerText = data[i].title;
-            td_creationDate.innerText = data[i].creationDate;
-            if (data[i].status == null){
+            if (data[i].status == null || data[i].status === "PENDING"){
                 data[i].status = 'PENDENTE';
             }
+            if (data[i].status === "ANALYSING"){
+                data[i].status = 'EM ANÁLISE';
+            }
+            if (data[i].status === "APPROVED"){
+                data[i].status = 'APROVADO';
+            }
+            if (data[i].status === "REPROVED"){
+                data[i].status = 'REPROVADO';
+            }
+
+            td_title.innerText = data[i].title;
+            td_creationDate.innerText = data[i].creationDate;
             td_status.innerText = data[i].status;
 
         }
