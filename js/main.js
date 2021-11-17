@@ -16,9 +16,25 @@ async function fazerLogin() {
     console.log(password)
     await fetch(`https://projeto-biolab.herokuapp.com/researchers?email=${user}&password=${password}`)
         .then(async response => {
-            if (response.status === 400 || response.status === 404) {
+            if (response.status === 400) {
                 console.log("usuario não encontrado")
                 alert("Usuario não encontrado")
+            } else if (response.status === 404) {
+                await fetch(`https://projeto-biolab.herokuapp.com//secretarys?email=${user}&password=${password}`)
+                    .then(async response => {
+                        if (response.status === 400 || response.status === 404) {
+                            console.log("usuario não encontrado")
+                            alert("Usuario não encontrado")
+                        } else if (response.status === 200) {
+                            let resposta = await response.json()
+                            let usuario = {
+                                'nome': resposta.name,
+                                'matricula': resposta.matriculation
+                            }
+                            localStorage.setItem('usuarioLogado', JSON.stringify(usuario))
+                            window.location.replace("dashboardSecretaria.html")
+                        }
+                    })
             } else if (response.status === 200) {
                 let resposta = await response.json()
                 let usuario = {
@@ -26,10 +42,12 @@ async function fazerLogin() {
                     'matricula': resposta.matriculation
                 }
                 localStorage.setItem('usuarioLogado', JSON.stringify(usuario))
-                window.location.replace("dashboardSecretaria.html")
-
+                window.location.replace("dashboard.html")
             }
         })
 }
+
+
+
 
 
