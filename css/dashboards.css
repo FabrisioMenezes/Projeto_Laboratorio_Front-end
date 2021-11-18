@@ -120,9 +120,10 @@ ul{
     align-items: initial;
 }
 .li-sair{
-    height: 230px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
+    padding-top: 160px;
 }
 .corpo-da-pagina{
     background-color: #EEEEEE;
