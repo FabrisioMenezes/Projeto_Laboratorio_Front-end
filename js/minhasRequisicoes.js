@@ -1,4 +1,6 @@
-fetch(`https://projeto-biolab.herokuapp.com/protocols`)
+let matricula = JSON.parse(localStorage.getItem('usuarioLogado'))
+
+fetch(`https://projeto-biolab.herokuapp.com/protocols/matriculation/${matricula.matricula}`)
     .then(response => response.json())
     .then(data => {
         let tbody = document.getElementById("body");
@@ -26,6 +28,5 @@ fetch(`https://projeto-biolab.herokuapp.com/protocols`)
             td_status.innerText = data[i].status;
 
         }
-
     })
 

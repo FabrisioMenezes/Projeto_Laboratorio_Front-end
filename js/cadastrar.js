@@ -30,4 +30,5 @@ function cadastrar(){
     }
     fazPost(url, body);
     alert("Usuário cadastrado com sucesso")
+    window.location.replace("index.html")
 }

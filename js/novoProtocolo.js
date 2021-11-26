@@ -8,19 +8,21 @@ function fazPost(url, body){
         console.log(this.responseText)
     }
     return request.responseText
-
 }
-function cadastrar(){
-    event.preventDefault();
+
+function cadastrarProtocolo(){
+    let matriculaUsuario = JSON.parse(localStorage.getItem('usuarioLogado'));
     let url = " https://projeto-biolab.herokuapp.com/protocols";
     let titulo = document.getElementById("titulo").value;
     let resenha = document.getElementById("resenha").value;
+    let status = 0;
     let areaPesquisa = document.getElementById("areaPesquisa").value;
     let especie = document.getElementById("especie").value;
     let quantidade = document.getElementById("quantidade").value;
     body = {
         "title": titulo,
-        "matriculation": matricula,
+        "matriculation": matriculaUsuario.matricula,
+        "status": status,
         "review": resenha,
         "areaId": areaPesquisa,
         "speciesId": especie,
