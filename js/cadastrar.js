@@ -11,7 +11,7 @@ function fazPost(url, body){
 }
 function cadastrar(){ 
     event.preventDefault()
-    let url = " https://projeto-biolab.herokuapp.com/researchers";
+    let url = "https://projeto-biolab.herokuapp.com/researchers";
     let nome = document.getElementById("nome-completo").value;
     let email = document.getElementById("email-pesquisador").value;
     let confirmaEmail = document.getElementById("confirmar-email-pesquisador").value;

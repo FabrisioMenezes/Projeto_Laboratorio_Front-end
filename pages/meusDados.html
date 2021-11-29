@@ -6,31 +6,32 @@
                 <h2>Meus Dados</h2>
                 <label>
                     <p>Nome Completo</p>
-                    <input type="text">
+                    <input type="text" id="nome">
                 </label>
                 <label>
                     <p>E-mail</p>
-                    <input type="email">
+                    <input type="email" id="email">
                 </label>
                 <label>
                     <p>Senha</p>
-                    <input type="password">
-                </label>
-                <label>
-                    <p>Matrícula</p>
-                    <input type="number">
+                    <input type="password" id="senha">
                 </label>
                 <label>
                     <p>Link do Curriculo Lattes</p>
-                    <input type="url">
+                    <input type="url" id="curriculo">
                 </label>
                 <label>
-                    <p>Area de Interesse Informada</p>
-                    <input type="text">
+                    <p>Area de Interesse</p>
+                    <input list="area-conhecimento" id="areaInteresse" name="browser" />
+                        <datalist id="area-conhecimento">
+                        <option value="Ciências Biológicas e da Saúde">
+                        <option value="Ciências Humanas e Sociais Aplicadas">
+                        <option value="Desenvolvimento Tecnológico e Inovação">
+                        </datalist>
                 </label>
                 <label>
                     <p>
-                        <input class="butao" type="submit" value="Atualizar">
+                        <input class="butao" type="submit" value="Atualizar" onclick="atualizarDados()">
                     </p>
                 </label>
             </fieldset>
