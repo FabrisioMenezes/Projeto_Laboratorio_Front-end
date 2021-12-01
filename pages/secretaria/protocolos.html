@@ -1,8 +1,32 @@
 <link rel="stylesheet" href="../../css/protocolos.css">
+<link rel="stylesheet" href="../../css/enviarProtocoloSecretaria.css">
 <meta charset="UTF-8">
 
 <div class="container">
-    <h2>Protocolos</h2>
+    <div class="protocoloComissao">
+        <h3>Enviar Protocolo Para Análise</h3>
+        <form method="post" class="enviarProtocolo">
+            <label>
+                <p>ID Protocolo</p>
+                <input type="number" id="idProtocolo">
+            </label>
+            <label>
+                <p>Primeiro Analista</p>
+                <input type="number" id="idPrimeiroAnalista">
+            </label>
+            <label>
+                <p>Segundo Analista</p>
+                <input type="number" id="idSegundoAnalista">
+            </label>
+            <label>
+                <button onclick="enviarProtocolo()">Enviar</button>
+            </label>
+        </form>
+    </div>
+    <div class="tituloProtocolo">
+        <h2>Protocolos</h2>
+        <input type="submit" value="Encaminhar Protocolo" id="encaminhar" onclick="encaminhar()">
+    </div>
     <table border="1px">
         <thead class="cabecalho">
             <th class="titulo"><strong>Número</strong></th>
@@ -18,6 +42,5 @@
     </table>
 </div>
 
-<script src="../../js/secretaria/protocolosSecretaria.js">
-
-</script>
+<script src="../../js/secretaria/protocolosSecretaria.js"></script>
+<script src="../../js/secretaria/enviarProtocolo.js"></script>
